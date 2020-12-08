@@ -4,9 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+let post = {
+  title: "Dinosaurs are awesome", 
+  author: "Jeremy Stegasour", 
+  body: "Check out this body property!", 
+  comments: ["First!", "Great post!", "Hire this author now!"]
+};
+
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App post={post}/>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
